@@ -1,0 +1,124 @@
+#home-button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background: url(../../assets/bg.jpg);
+    background-size: cover;
+    width: 100vw;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+#background-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5); /* Couleur d'arrière-plan semi-transparente */
+    backdrop-filter: blur(5px); /* Applique le flou à l'arrière-plan */
+  }
+
+#informations {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    min-width: 362px;
+    min-height: 194px;
+    font-size: 18.5px;
+    z-index: 2;
+
+    background: #e2f9ff;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;  
+    -webkit-box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 3px 1px rgba(0, 0, 0, 0.2);
+    color: #1a62b1; 
+
+    & #title {
+        font-weight: bold;
+    }
+}
+
+/* Tooltips 'nan nan' */
+
+.tooltip-element:hover #tooltip {
+    display: block;
+}
+  
+#tooltip {
+    display: none;
+    color: black;
+    position: fixed;
+    border-radius: 20px;
+    border: 2px dashed black;
+    top: 0;
+    left: 0;
+    background-color: rgb(236, 236, 236);
+    padding: .85em;
+    font-size: 2vmin;
+    line-height: 1.25em;
+    margin: 0.125em 0.25em;
+    pointer-events: none;
+    z-index: 100;
+    gap: .5em;
+    flex-direction: column;
+    width: 12em;
+    transition: opacity ease-in-out .3s;
+    opacity: 1;
+}
+
+#tooltip.visible {
+    display: flex;
+}
+
+#tooltip.transparent {
+    opacity: 0;
+}
+
+#tooltip-title {
+    font-size: 1.1em;
+}
+  
+/* Responsive */
+
+@media screen and (max-width: 1377px){
+    body{
+      top: 0px !important;
+      flex-direction: column-reverse;
+      justify-content: start; 
+      align-items: center;
+      overflow: auto;
+      margin-top: 25px;
+    }
+
+    #container {
+      gap: 15px!important;
+    }
+    .map{
+      width: 100vw !important;
+      height: 100vw !important;
+      margin-left: 0px !important;
+    }
+
+    #informations {
+      font-size: 15px !important;
+      padding: 20px !important;
+    }
+}
+
+@media screen and (max-width: 500px){
+    #home-button {
+      font-size: 2.5em !important;
+    }
+}
