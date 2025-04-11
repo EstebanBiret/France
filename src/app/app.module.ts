@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 import { CliqueComponent } from './clique/clique.component';
 import { DecouverteComponent } from './decouverte/decouverte.component';
 import { TrouveComponent } from './trouve/trouve.component';
@@ -11,6 +12,7 @@ import { TrouveComponent } from './trouve/trouve.component';
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
     CliqueComponent,
     DecouverteComponent,
     TrouveComponent,

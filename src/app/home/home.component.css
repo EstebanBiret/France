@@ -22,6 +22,7 @@ body {
 #buttons {
     display: flex;
     gap: 20px;
+    cursor: pointer;
 }
 
 .button--piyo{
@@ -67,19 +68,7 @@ body {
     background : var(--main_color) ;
     font-family: 'Poppins', sans-serif;
 }
-/* .button::before{
-    content : '' ;
-    position : absolute ;
-    z-index : 2 ;
-    top : 0 ;
-    right : 20px ;
-    bottom : 0 ;
-    margin : auto 0 ;
-    width : 24px ;
-    height : 24px ;
-    background : var(--base_color) ; 
-    transition : all ease .2s ;
-} */
+
 .button__wrapper{
     display : flex ;
     justify-content : center ;
