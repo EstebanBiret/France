@@ -118,7 +118,6 @@ export class DecouverteComponent implements OnInit {
     
     this.makeTooltips();
     this.colorierDpts();
-
   }
 
   colorierDpts() {
@@ -260,8 +259,4 @@ export class DecouverteComponent implements OnInit {
       }
     }
   }
-  
-
 }
-
-

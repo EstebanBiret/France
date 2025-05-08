@@ -24,8 +24,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Couleur d'arrière-plan semi-transparente */
-    backdrop-filter: blur(5px); /* Applique le flou à l'arrière-plan */
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
   }
 
 #informations {
@@ -50,8 +50,7 @@ body {
     }
 }
 
-/* Tooltips 'nan nan' */
-
+/* Tooltips */
 .tooltip-element:hover #tooltip {
     display: block;
 }
@@ -91,7 +90,6 @@ body {
 }
   
 /* Responsive */
-
 @media screen and (max-width: 1377px){
     body{
       top: 0px !important;
